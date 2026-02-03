@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packing Assistant - Ceyni Adan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="user-info">
+            <h1>Travel Packing Assistant</h1>
+            <p><strong>Student:</strong> Ceyni Adan Ahmed | <strong>ID:</strong> C5240036</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h3>Add New Item</h3>
+            <form id="packing-form">
+                <input type="text" id="item-name" placeholder="Item (e.g., Passport)" required>
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Documents">Documents</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Toiletries">Toiletries</option>
+                </select>
+                <input type="number" id="duration" placeholder="Trip Days" required>
+                <button type="submit">Add to List</button>
+            </form>
+        </section>
+
+        <section class="list-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
